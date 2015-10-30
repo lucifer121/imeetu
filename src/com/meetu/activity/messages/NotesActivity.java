@@ -45,6 +45,7 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 	private RelativeLayout backLayout;
 	private static RelativeLayout bottomLayout;
 	private RelativeLayout disposeLayout;
+	private RelativeLayout laheilayout,jubaolayout;
 	
 	//表情键盘相关
 	private LinearLayout sendLinearLayout;
@@ -123,7 +124,9 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 				log.e("lucifer", "isOpen=="+isOpen);
 				if(imm.isActive()){
 	//				imm.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, InputMethodManager.HIDE_NOT_ALWAYS);
-	//				((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(NotesActivity.this.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+
+
+					
 				
 				}
 				
@@ -151,6 +154,7 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 		case R.id.manage_notes_center_rl:
 			showPopWindow();
 			popupWindow.showAsDropDown(v, 0, 0);
+			
 			break;
 
 		default:
@@ -173,7 +177,26 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 			ColorDrawable colorDrawable = new ColorDrawable();
 			popupWindow.setBackgroundDrawable(colorDrawable);
 		//	tvTitle=(TextView)view.findViewById(R.id.tvcolectList);
-
+			laheilayout=(RelativeLayout) view.findViewById(R.id.lahei_item_laheijubao_rl);
+			jubaolayout=(RelativeLayout) view.findViewById(R.id.jubao_item_laheijubao_rl);
+			laheilayout.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					log.e("lucifer", "拉黑");
+					popupWindow.dismiss();
+				}
+			});
+			jubaolayout.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					log.e("lucifer", "举报");
+					popupWindow.dismiss();
+				}
+			});
 		}
 		
 	}
