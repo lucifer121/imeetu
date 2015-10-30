@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+	android:layout_marginRight="8dp" 
+	android:layout_marginBottom="8dp"
+    android:background="@drawable/tupian_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="wrap_content"       
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/mine_img_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+			        
+            android:src="@drawable/mine_img_loading" />
+ 
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_all"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="马尔代夫的海" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:textColor="#33c6e5"
+        android:text="2015-10-01" />
+    
+      <ImageView
+            android:id="@+id/mine_icon_no_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            
+            
+            android:src="@drawable/mine_photoview_cell_btn_like_nor" />
+
+        <TextView
+            android:id="@+id/mine_favourNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mine_icon_no_favorites"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/mine_icon_no_favorites"
+            android:textSize="10dp"
+            android:text="128"
+            android:textColor="#cccccc" />
+
+        <ImageView
+            android:id="@+id/mine_icon_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mine_favourNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mine_favourNumber"
+            android:src="@drawable/mine_photoview_cell_img_views" />
+
+        <TextView
+            android:id="@+id/mine_viewNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mine_icon_views"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/mine_icon_views"  
+            android:textSize="10dp"          
+            android:text="123"
+            android:textColor="#cccccc" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"           
+            android:layout_below="@+id/mine_favourNumber"/>
+
+</RelativeLayout>

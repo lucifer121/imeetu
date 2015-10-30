@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/all_item_fragment_message_rl"
+        android:layout_width="match_parent"
+        android:layout_height="76dp" >
+
+        <ImageView
+            android:id="@+id/photoHead_item_fragment"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/massage_newslist_img_chat" />
+
+        <RelativeLayout
+            android:id="@+id/right_item_fragment_messages_lr"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/time_item_fragment_messages_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="刚刚 "
+                android:textColor="#606366"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/time_item_fragment_messages_tv"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/massage_newslist_img_unreadtips_bg"
+                android:gravity="center"
+                android:singleLine="true" >
+
+                <TextView
+                    android:id="@+id/number_noRead_item_fragment_messages_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/center_item_fragment_message_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@id/right_item_fragment_messages_lr"
+            android:layout_toRightOf="@id/photoHead_item_fragment" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name_item_fragment_messages_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="戴安娜 "
+                    android:textColor="#606366"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/content_item_fragment_messages_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_item_fragment_messages_tv"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="hi 好久不见，最近在忙什么呢"
+                    android:textColor="#a0a0a0"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="80dp"
+        android:background="#cccccc" />
+
+</LinearLayout>

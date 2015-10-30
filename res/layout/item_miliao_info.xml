@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/all_item_miliao_info_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/photo_item_miliao_info_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp" >
+
+            <ImageView
+                android:id="@+id/photo_item_miliao_info_img"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/acty_barrage_img_comment_profiles_default" />
+
+            <ImageView
+                android:id="@+id/delete_item_miliao_info_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/massage_groupchatmember_img_remove" />
+
+            <ImageView
+                android:id="@+id/favor_item_miliao_info_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                android:src="@drawable/massage_groupchatmember_img_attention" />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_item_miliao_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo_item_miliao_info_rl"
+            android:layout_centerHorizontal="true"
+            android:text="张三"
+            android:textColor="#606366"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

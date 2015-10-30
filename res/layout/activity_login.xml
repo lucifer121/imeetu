@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/iv_back_denglu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/register_leftarrow_720" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:text="登录" />
+            <ImageView
+                android:id="@+id/activity_register_to_yanzhengma_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nornal_margin_left"
+        android:layout_marginRight="@dimen/nornal_margin_right"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/register_logo_720" />
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+         android:layout_marginLeft="@dimen/nornal_margin_left"
+        android:layout_marginRight="@dimen/nornal_margin_right"
+        android:layout_marginTop="46dp">
+        <TextView 
+	        android:id="@+id/forget_to_torgetactivty_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="180dp"        
+	        android:text="忘记密码"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nornal_margin_left"
+        android:layout_marginRight="@dimen/nornal_margin_right"
+        
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView 
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/register_phone_720"
+                />
+        <EditText
+            android:id="@+id/activity_register_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:phoneNumber="true"
+            android:maxLength="11"
+            android:hint="手机" 
+            android:singleLine="true"
+            android:layout_toRightOf="@id/img3"
+            android:background="@drawable/register_password_f_720"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nornal_margin_left"
+        android:layout_marginRight="@dimen/nornal_margin_right"
+        android:layout_marginTop="@dimen/nornal_margin_top"
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView 
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/register_password_720"
+                />
+        <EditText
+            android:id="@+id/activity_register_mima_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:singleLine="true"
+            android:hint="密码(6到16位数字、字母)" 
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_toRightOf="@id/img2"
+            android:background="@drawable/register_password_f_720"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nornal_margin_left"
+        android:layout_marginRight="@dimen/nornal_margin_right"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal" 
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            >
+            <View
+                android:layout_width="25dp"
+                android:layout_height="1dp" 
+                android:layout_centerVertical="true"
+                android:background="#9a9a9a"
+                android:layout_alignParentLeft="true"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" 
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9a9a9a"
+                    android:text="登录或注册表示同意 " 
+                    />
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    
+                <TextView
+                    android:id="@+id/activity_register_yonghuxieyi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户协议" 
+                    android:textColor="#00b8de"
+                    />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" 
+                android:background="#33ccff"
+                />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="25dp"
+                android:layout_height="1dp" 
+                android:layout_centerVertical="true"
+                android:background="#aaaaaa"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nornal_margin_left"
+        android:layout_marginRight="@dimen/nornal_margin_right"
+        android:layout_marginTop="96dp">
+        <Button
+            android:id="@+id/denglu_bt_denglu"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="登录"
+        	android:background="@drawable/register_login_1_720"
+            />
+        </LinearLayout>
+  
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="32dp"
+                    android:hint="[我想认识你]团队出品"
+                    android:paddingBottom="@dimen/nornal_padding_buttom" />
+            </RelativeLayout>
+       
+
+</LinearLayout>

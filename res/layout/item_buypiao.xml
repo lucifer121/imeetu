@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/buypiao_join_page_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        
+        
+         >
+
+        <RelativeLayout
+            android:id="@+id/left_buypiao_join_page_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/name_buyPiao_join_homepager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@drawable/acty_join_btn_point_nor"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="12dp"
+                android:textSize="14sp"
+                android:textColor="#606366"
+                android:text="在校生" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_buyPiao_join_homepager"
+                android:layout_below="@+id/name_buyPiao_join_homepager"
+                android:layout_marginLeft="19dp"
+                android:textSize="12sp"
+                android:textColor="#bfbfbf"
+                android:text="男女同行，女生免费哦！" />
+
+            <ImageView
+                android:id="@+id/no_tickets_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/name_buyPiao_join_homepager"
+                android:layout_toRightOf="@+id/name_buyPiao_join_homepager"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                android:src="@drawable/acty_join_img_novotes" />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/price_baypiao_join_homepager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#ff6b6b"
+            android:text="99" />
+
+        <TextView
+            android:id="@+id/left_price_baypiao_join_homepager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/price_baypiao_join_homepager"
+            android:layout_alignBottom="@+id/price_baypiao_join_homepager"
+            android:layout_toLeftOf="@+id/price_baypiao_join_homepager"
+            android:textSize="15sp"
+            android:textColor="#ff6b6b"
+            android:text="¥ " />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+
+	<RelativeLayout 
+	    android:id="@+id/top_likeslist_mine"
+	    android:layout_width="match_parent"
+	    android:background="@color/white"
+	    android:layout_height="44dp">
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:textSize="19dp"
+		    android:textColor="#a0a0a0"
+		    android:text="谁赞过我" />
+
+		<ImageView
+		    android:id="@+id/back_favorlist_mine_img"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="18dp"
+		    android:src="@drawable/navi_btn_close" />
+ 
+		<TextView
+		    android:id="@+id/textView2"       
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="10dp"
+		    android:text="人" />
+
+		<TextView
+		    android:id="@+id/favornumber_likelist_mine"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/textView2"
+		    android:layout_alignBottom="@+id/textView2"
+		    android:layout_toLeftOf="@+id/textView2"
+		    android:text="35" />
+
+		<TextView
+		    android:id="@+id/textView4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/favornumber_likelist_mine"
+		    android:layout_toLeftOf="@+id/favornumber_likelist_mine"
+		    android:text="共" />
+		<ImageView android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:src="@drawable/mine_likelist_nav_img_line"/>	    
+	    </RelativeLayout>
+	  <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/newlikeslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_likeslist_mine"
+        android:cacheColorHint="#00000000"
+        android:divider="#cccccc"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    	
+    
+		
+	
+	    
+
+
+</RelativeLayout>

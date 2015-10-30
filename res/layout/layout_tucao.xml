@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/gainsboro" >
+   
+
+    <RelativeLayout
+        android:id="@+id/input_biaoqing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+    
+
+        <RelativeLayout
+            android:id="@+id/input_emojis_tab"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gainsboro" >
+
+            <ImageView
+                android:id="@+id/input_del_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/acty_barrage_img_arrow" />
+
+            <LinearLayout
+                android:id="@+id/input_ll_point_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/input_submit_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/acty_barrage_img_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/input_emojis_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/input_emojis_tab"
+            android:background="#949494" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/input_emojis_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/input_emojis_tab"
+            android:layout_marginBottom="0.5dp"
+            android:background="#eaeaea"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+ -
+
+    <RelativeLayout
+        android:id="@+id/input_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_biaoqing"
+        android:background="@color/grade" >
+
+        <ImageView
+            android:id="@+id/input_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@drawable/acty_card_img_clock" />
+
+        <ImageView
+            android:id="@+id/input_emoji_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/input_send_btn"
+            android:padding="5dp"
+            android:src="@drawable/acty_barrage_navi_btn_joinlist_2x" />
+ 
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/input_emoji_btn"
+           
+            android:gravity="center_vertical"
+          
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="false"
+           
+          
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/input" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/input_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_rel"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:text="0"
+      
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_input_bk"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/input_rel"
+        android:background="#00000000"
+        />
+
+</RelativeLayout>

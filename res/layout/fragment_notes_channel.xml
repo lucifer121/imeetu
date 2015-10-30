@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollview_notes_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/all_fragment_notes_channes_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/top_fragment_notes_channel_rl"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/massage_letters_show_img" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_fragment_notes_channel_rl"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/top_fragment_notes_channel_rl" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="14dp"
+                    android:ellipsize="end"
+                    android:maxEms="100"
+                    android:text="    那一天 我闭目在经殿的香雾中 蓦然听见 你诵经的真言。 
+
+    那一月 我摇动所有的经筒 不为超度 只为触摸你的指尖 
+
+   那一年 我磕长头在山路 不为觐见 只为贴着你的温暖 
+
+   那一世 我转山转水转佛塔 不为轮回 只为途中与你相见 
+
+那一天 我闭目在经殿香雾中 蓦然听见你颂经中的真言 
+
+那一月 我摇动所有的转经筒 不为超度 只为触摸你的指尖 "
+                    android:textColor="#898989"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_notes_send_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/bottom_emoji_send_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+
+            <RelativeLayout
+                android:id="@+id/send_notes_rl"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/send_notes_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/message_groupchat_btn_send_nor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emoji_notes_fragment_rl"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/emoji_notes_fragment_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/emotionsemojihl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_toLeftOf="@id/send_notes_rl"
+                android:layout_toRightOf="@id/emoji_notes_fragment_rl" >
+
+                <EditText
+                    android:id="@+id/input_notes_fragment_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:singleLine="true"
+                    android:textColor="#606366"
+                    android:textSize="14sp" >
+
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="6dp"
+                    android:background="#33c6e5" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/chat_face_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_emoji_send_rl"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:id="@+id/center2_joinUsers_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+      	
+         >
+
+        <ImageView
+            android:id="@+id/userPhoto_joinUsers_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/mine_likelist_profile_default" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/userPhoto_joinUsers_img"
+            
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/userName_item_joinUsers_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘德华"
+                android:textColor="#606366"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/school_item_joinUsers_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/userName_item_joinUsers_tv"
+                android:text="北京大学"
+                android:textColor="#a0a0a0"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/sex_joinUsers_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/userName_item_joinUsers_tv"
+                android:src="@drawable/acty_joinlist_img_male" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/sex_joinUsers_img"
+                android:text="NO ."
+                android:textColor="#bfbfbf"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/position_item_joinUser_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:text="18"
+                android:textColor="#bfbfbf"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,278 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66eeeeee"
+   >
+
+   <RelativeLayout
+       android:id="@+id/top_changname_rl"
+       android:layout_width="match_parent"
+       android:layout_height="44dp"
+       android:background="@color/pwhite" >
+
+       <RelativeLayout
+           android:id="@+id/back_applyForMiLiao_rl"
+           android:layout_width="44dp"
+           android:layout_height="44dp"
+           android:layout_marginLeft="5dp"
+           android:background="@drawable/kongjianruoqu_bg"
+           android:gravity="center" >
+
+           <ImageView
+               android:id="@+id/back_applyForMiLiao_img"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/mine_alter_btn_back" />
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/title_applyForMiLiao_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:text="创建觅聊功能申请"
+           android:textColor="#a0a0a0"
+           android:textSize="17sp" />
+   </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chat_application_img_card_bg"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/center_top_applyforMiLiao_ll"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="20dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_application_img_btqm" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/chat_application_img_title" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="觅聊功能现在还在处于内测阶段"
+                android:textColor="#a0a0a0"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="需要你发起申请 审核通过 才能开启创建觅聊功能"
+                android:textColor="#a0a0a0"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/img_point_red"
+                    android:drawablePadding="4dp"
+                    android:text="你应该是一个有趣的话题组织者"
+                    android:textColor="#a0a0a0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/img_point_red"
+                    android:drawablePadding="4dp"
+                    android:text="你应该是一个乐于带着U粉儿玩耍的人"
+                    android:textColor="#a0a0a0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/img_point_red"
+                    android:drawablePadding="4dp"
+                    android:text="你应该是一个对自己发起的觅聊用心负责的人"
+                    android:textColor="#a0a0a0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/img_point_red"
+                    android:drawablePadding="4dp"
+                    android:text="......"
+                    android:textColor="#a0a0a0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/view_center1_applyforMiLiao"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/center_top_applyforMiLiao_ll"
+            android:layout_marginRight="10dp"
+            android:background="#cccccc"/>
+        <RelativeLayout 
+            android:id="@+id/center2_applyforMiLiao_rl"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_below="@id/view_center1_applyforMiLiao"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/chat_application_img_afterquotes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/imageView2"
+                
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#606366"
+                    android:layout_marginBottom="2dp"
+                    android:text="描述下自己，包括特长爱好、" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_marginTop="1dp"
+                   android:layout_marginBottom="1dp"
+                    android:textSize="13sp"
+                    android:textColor="#606366"
+                    android:text="性格特点以及对发起觅聊的想法..." />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#606366"
+                    android:layout_marginTop="1dp"
+                   android:layout_marginBottom="1dp"
+                    android:text="真诚有趣的文字，" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                   android:layout_marginBottom="1dp"
+                    android:textSize="13sp"
+                    android:textColor="#606366"
+                    android:text="最能触动小U的棉花儿心~" />
+
+            </LinearLayout>
+            
+            </RelativeLayout>
+             <View 
+                 android:id="@+id/view2_applyforMiLiao"
+                 android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/center2_applyforMiLiao_rl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#cccccc"/>
+
+
+            <ImageView
+                android:id="@+id/applyForMiLiao_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+               android:layout_marginBottom="20dp"
+               android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/chat_application_btn_initiateapplication" />
+            <View 
+                android:id="@+id/view_bottom_appayForMiliao"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_marginBottom="15dp"
+                android:layout_above="@id/applyForMiLiao_img"/>
+            
+            <RelativeLayout
+                android:layout_below="@id/view2_applyforMiLiao"
+                android:layout_above="@id/view_bottom_appayForMiliao"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="14dp"
+                 >
+
+                <EditText
+                    android:id="@+id/content_applyForMiLiao_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="   发出申请后，小U会飞奔告诉你反馈结果的"
+                    android:textColor="#606366"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        
+     </RelativeLayout>
+
+
+</LinearLayout>

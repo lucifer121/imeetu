@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_feedpager_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/back_feedback_homepager_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back_feedback_homepager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_alter_btn_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="活动反馈"
+            android:textColor="#a0a0a0"
+            android:textSize="19sp" />
+
+        <RelativeLayout
+            android:id="@+id/queding_feedback_homepager_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/queding_feedback_homepager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="#33c6e5"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/top_feedpager_rl"
+        android:background="#cccccc" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_feedpager_rl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/acty_show_img_inputbox" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_feedpager_rl"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/acty_feedback_img_trangle" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/acty_show_img_profile" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="新疆深度游........" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="2015/10/10" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="280dp"
+        android:layout_height="190dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:gravity="left|top"
+        android:textColor="#313131"
+        android:background="@null"
+       android:hint="在此处写下想要说的话">
+        
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/img_point_red"
+        android:drawablePadding="6dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:textColor="#898989"
+        android:text="更多精彩，加入活动达人qq群：" />
+
+    <TextView
+        android:id="@+id/number_feedback_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:textColor="#33c6e5"
+        android:textSize="12sp"
+        android:text="123456789" />
+	<RelativeLayout 
+	    android:id="@+id/copy_feedback_rl"
+	    android:layout_width="36dp"
+	    android:layout_height="36dp"
+	   android:background="@drawable/kongjianruoqu_bg"
+        android:layout_toRightOf="@+id/number_feedback_tv"
+        android:layout_below="@+id/imageView1"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/copy_feedback_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        
+        android:textColor="#33c6e5"
+        
+        android:text="复制" />
+    </RelativeLayout>
+
+</RelativeLayout>

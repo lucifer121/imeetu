@@ -1,0 +1,30 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BaiduMapMainActivity" 
+    android:background="@color/pwhite">
+  
+    <FrameLayout  android:id="@+id/contentLayout"
+	     android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1">
+        
+    </FrameLayout>
+   
+
+ 	<android.support.v4.app.FragmentTabHost
+ 	    android:id="@android:id/tabhost"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="54dp"
+ 	    android:background="#F6F6F6"
+ 	 
+ 	    >
+ 	    <FrameLayout android:id="@android:id/tabcontent"
+ 	        android:layout_height="0dp" android:layout_width="0dp"
+ 	        />
+ 	        
+ 	</android.support.v4.app.FragmentTabHost>
+	    
+</LinearLayout>

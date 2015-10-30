@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_changname_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/back_miliao_chat_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back_miliao_chat_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_alter_btn_back" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喜欢民谣的进来呗"
+                android:textColor="#a0a0a0"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(10)"
+                android:textColor="#a0a0a0"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/userList_miliao_chat_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/userList_miliao_chat_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/massage_navi_btn_groupmembers" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/top_changname_rl"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/time_remind_miliao_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/top_changname_rl"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_groupchat_img_clock" />
+
+        <TextView
+            android:id="@+id/time_remind_miliao_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="3h"
+            android:textColor="#bfbfbf"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消失"
+            android:textColor="#bfbfbf"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2_chatFragment"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/time_remind_miliao_ll"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/bottom_chat_fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view_bottom_Top_chat_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/Bottom_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+             >
+
+            <RelativeLayout
+                android:id="@+id/send_chat_fragment_rl"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"               
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/send_chat_fragment_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/message_groupchat_btn_send_nor" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/input_chat_fragment_et"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@id/send_chat_fragment_rl"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#606366"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/input_chat_fragment_et"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#33c6e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+             >
+
+            <ImageView
+                android:id="@+id/chat_face_container_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/message_groupchat_btn_emoticon_nor" />
+
+            <ImageView
+                android:id="@+id/chat_photo_container_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/message_groupchat_btn_picture_nor" />
+
+            <ImageView
+                android:id="@+id/chat_camera_container_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/message_groupchat_btn_photo_nor" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cccccc" />
+
+        <include
+            android:id="@+id/chat_face_container"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/listView_chatFragment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_chat_fragment_ll"
+        android:layout_below="@id/view2_chatFragment" >
+
+        <ListView
+            android:id="@+id/listView_chatFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollingCache="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/send_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        
+        android:background="#80eeeeee" >
+
+        <ImageView
+            android:id="@+id/send_bottom_notes_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/massage_letters_show_btn_sendletters" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

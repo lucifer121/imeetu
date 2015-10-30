@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pwhite" >
+
+    <RelativeLayout
+        android:id="@+id/top_changname_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/back_joinUsers_homepager_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back_joinUsers_homepager_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navi_close_blue" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_joinUsers_homepager_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="新疆深度游"
+            android:textColor="#a0a0a0"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/sign_joinUsers_homepager_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/sign_joinUsers_homepager_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到"
+                android:textColor="#33c6e5"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/top_changname_rl"
+        android:background="#cccccc" />
+    
+    <ScrollView 
+        android:id="@+id/scrollview_joinUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@+id/top_changname_rl">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+       
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/acty_joinlist_img_point" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="签到人"
+            android:textColor="#a0a0a0"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center2_joinUsers_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+         >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/mine_likelist_profile_default" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView2"
+           
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘德华"
+                android:textColor="#606366"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView2"
+                android:text="北京大学"
+                android:textColor="#a0a0a0"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:src="@drawable/acty_joinlist_img_male" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="NO ."
+                android:textColor="#bfbfbf"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:text="18"
+                android:textColor="#bfbfbf"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sign_joinUsers_homepager_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/acty_joinlist_img_nosign" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center3_joinUsers_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/center2_joinUsers_rl"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/acty_joinlist_img_point" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="我关注的人"
+            android:textColor="#a0a0a0"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/number_favor_joinUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="(0)"
+            android:textColor="#606366"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    
+
+        <ListView
+            android:id="@+id/listview_favor_joinUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_below="@+id/center3_joinUsers_rl"
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollingCache="false" />
+   
+
+    <RelativeLayout
+        android:id="@+id/center4_joinUsers_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/listview_favor_joinUser"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/acty_joinlist_img_point" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="所有成员"
+            android:textColor="#a0a0a0"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/number_all_joinUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="(0)"
+            android:textColor="#606366"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+   
+
+        <ListView
+            android:id="@+id/listview_all_joinUsers"
+             android:layout_below="@+id/center4_joinUsers_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"           
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollingCache="false" />
+   
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

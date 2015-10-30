@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_update_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/back_update_mine_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:textColor="#33c6e5"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="上传照片"
+            android:textColor="#a0a0a0"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/wancheng_update_mine_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:text="完成"
+            android:textColor="#33c6e5"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+   
+
+    
+
+    <RelativeLayout
+        android:id="@+id/bottom_update_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="/50"
+            android:textColor="#33c6e5"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textsize_update_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView4"
+            android:text="0"
+            android:textColor="#33c6e5"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/center_update_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@id/bottom_update_rl"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/update_text_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/mine_photoview_photoupload_img_edit"
+            android:hint="来写点你想说的吧"
+            android:maxLength="50"
+            android:textColorHint="#bfbfbf"
+            android:textColorLink="#33c6e5"
+            android:textSize="12dp" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33c6e5" />
+    </LinearLayout>
+     <ImageView
+        android:id="@+id/update_picture_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_update_rl"
+        android:layout_above="@id/center_update_ll"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"       
+        android:layout_alignParentLeft="true"       
+        android:src="@drawable/img5_ceshi" />
+
+</RelativeLayout>

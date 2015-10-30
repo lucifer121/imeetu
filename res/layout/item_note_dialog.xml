@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+         	android:id="@+id/bottom_notes_send_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            
+            
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/bottom_emoji_send_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" >
+
+                <RelativeLayout
+                    android:id="@+id/send_notes_rl"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/send_notes_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/message_groupchat_btn_send_nor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emoji_notes_fragment_rl"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/emoji_notes_fragment_img"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/emotionsemojihl" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_toLeftOf="@id/send_notes_rl"
+                    android:layout_toRightOf="@id/emoji_notes_fragment_rl" >
+
+                    <EditText
+                        android:id="@+id/input_notes_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:singleLine="true"
+                        android:textColor="#606366"
+                        android:textSize="14sp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:background="#33c6e5" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/chat_face_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@id/bottom_emoji_send_rl"
+                layout="@layout/chat_face_container" />
+        </LinearLayout>
+    
+
+</RelativeLayout>

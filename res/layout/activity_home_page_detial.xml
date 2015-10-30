@@ -1,0 +1,445 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pwhite" >
+
+    <com.meetu.view.MyScrollView
+        android:id="@+id/scrollview_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/top_lunbo_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pthoto_newsdetail_title" />
+
+                <LinearLayout
+                    android:id="@+id/dian_linearlayout_homepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/viewpager_photo"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title_lunbo_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/top_lunbo_homepage" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/acty_show_img_label" />
+
+                    <TextView
+                        android:id="@+id/title_lunbo_item_homepage_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:text="徒步去西藏"
+                        android:textColor="#a0a0a0"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_toRightOf="@+id/title_lunbo_item_homepage_tv"
+                        android:text="---"
+                        android:textColor="#a0a0a0"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text="带你看最美丽的西藏"
+                        android:textColor="#a0a0a0"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/over_homepager_detial_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/relativeLayout2"
+                    android:visibility="invisible"
+                    android:src="@drawable/acty_show_img_closed" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/usertop_view_homepage_detial"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/title_lunbo_homepage"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/users_homepage_detial"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_below="@id/usertop_view_homepage_detial"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView6"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView9"
+                    android:src="@drawable/acty_show_img_profiles" />
+
+
+				<RelativeLayout
+				    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView10"
+                    android:background="@drawable/acty_show_btn_numberofpeople_nor">
+
+					<TextView
+					    android:id="@+id/textView6"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_centerHorizontal="true"
+					    android:layout_centerVertical="true"
+					    android:textColor="#33c6e5"
+					    android:text="0" />
+				    
+				</RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/userbottom_view_homepage_detial"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/users_homepage_detial"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/address_homepage_detial"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_below="@id/users_homepage_detial"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                   
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/acty_show_img_clock" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/imageView12"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@drawable/acty_show_img_landmark" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/imageView12"
+                        android:text="2015-10-01  14:00-17:00"
+                        android:textColor="#707070"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView4"
+                        android:layout_alignTop="@+id/imageView13"
+                        android:text="中关村东路16号院  Meet U单身社区"
+                        android:textColor="#707070"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/baidumap_homepage_detial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/acty_show_btn_viewmap_nor" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/userbottom_view_homepage_detial"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/address_homepage_detial"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/webview_homepage_detial_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/address_homepage_detial"
+                 >
+
+                <RelativeLayout
+                    android:id="@+id/top_webview_homepage_detial_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/acty_show_img_titleline_l" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:text="活动详情"
+                        android:textColor="#33c6e5"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imageView2"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:src="@drawable/acty_show_img_title_r" />
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/contentWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/top_webview_homepage_detial_rl"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#0000" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.meetu.view.MyScrollView>
+
+    <ImageView
+        android:id="@+id/barrage_homepage_detial_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/acty_show_btn_barrage_nor" />
+
+    <ImageView
+        android:id="@+id/join_homepager_detial_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/acty_show_btn_join_nor" />
+    
+    
+    <ImageView
+        android:id="@+id/feedback_homepage_detial_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:src="@drawable/acty_show_btn_feedback_nor" />
+
+    <ImageView
+        android:id="@+id/memory_homepager_detial_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:src="@drawable/acty_show_btn_memorieswall_nor" />
+
+    
+
+    <RelativeLayout
+        android:id="@+id/top_homepage_detial_rl" 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="#00ffffff">
+        <TextView
+        android:id="@+id/favornumber_homepage_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:textSize="13sp"
+        android:textColor="#d1ffffff"
+        android:text="100" />
+    <RelativeLayout
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/kongjianruoqu_bg"
+        android:layout_toLeftOf="@id/favornumber_homepage_detail"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/acty_show_navi_btn_like_hl" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/back_homepage_detial_rl"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/kongjianruoqu_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/back_homepage_detial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mine_alter_btn_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_top_homepager_detial_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/favornumber_homepage_detail"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:text="新疆深度游" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

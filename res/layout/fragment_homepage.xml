@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pwhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_homepage_rl"
+        android:layout_width="match_parent"
+        
+        android:layout_height="44dp" >
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/acty_navi_btn_landmark" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="北京"
+                android:textColor="#33c6e5"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="活动"
+            android:textColor="#a0a0a0"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/newsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_homepage_rl"
+        android:cacheColorHint="#00000000"
+
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/usernumber_homepage_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/acty_cover_img_slidinglabel"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/zongnumber_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="100已报名"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/woguanzhunumber_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zongnumber_homepage"
+            android:layout_marginLeft="15dp"
+            android:text="33个我关注的"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

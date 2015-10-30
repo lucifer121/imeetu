@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp"
+ 	>
+
+<RelativeLayout
+    android:id="@+id/top_homepage_item"
+    android:layout_width="match_parent"
+    android:layout_height="236dp" >
+
+    <ImageView
+        android:id="@+id/img_huodong_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/acty_cover_card_img_fullmask" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/acty_cover_card_img_mask" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/acty_cardimg_btn_like_hl" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="50"
+            android:textColor="#ccffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/style_homepage_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="活动进行中"
+            android:textColor="#ccffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/bottom_homepage_item"
+        android:layout_width="match_parent"
+       
+        android:layout_height="60dp"
+        
+        
+         android:layout_below="@id/top_homepage_item"
+        >
+    <RelativeLayout android:layout_width="wrap_content"      
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+     <TextView
+        android:id="@+id/title_huodong_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="17sp"
+        android:textColor="#606366"       
+        android:text="这是用来测试的啊" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginTop="10dp"
+         android:textSize="13sp"
+        android:textColor="#a0a0a0" 
+         android:layout_below="@+id/title_huodong_homepage"
+         android:text="地址:Meet U 单身社区" />
+
+     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#b5b5b5"
+        android:textSize="12sp"
+        android:text="2015-08-10" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/acty_card_img_clock" />      
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_bottom_homepage"
+        android:layout_below="@id/bottom_homepage_item"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"/>
+   <View
+        android:id="@+id/view_bottom2_homepage"
+        android:layout_below="@id/view_bottom_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#80eeeeee"/>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+ <RelativeLayout
+     android:id="@+id/top_mine_photoview_fullscreen_rl"
+     android:layout_width="wrap_content"
+     android:layout_height="44dp"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:background="@drawable/mine_photoview_fullscreen_navbar_bg"
+     android:gravity="center" >
+
+     <RelativeLayout
+         android:id="@+id/back_mine_photoview_fullscreen_rl"
+         android:layout_width="44dp"
+         android:layout_height="44dp"
+         android:background="@drawable/kongjianruoqu_bg"
+         android:gravity="center" >
+
+         <ImageView
+             android:id="@+id/back_mine_photoview_fullscreen_img"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:src="@drawable/navi_close_ffffff" />
+     </RelativeLayout>
+     
+     <RelativeLayout 
+         android:id="@+id/deldect_mine_photoview_fullscreen_rl"
+         android:layout_width="44dp"
+         android:layout_height="44dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/kongjianruoqu_bg"
+         android:gravity="center"
+         >
+
+     <ImageView
+         android:id="@+id/deldect_mine_photoview_fullscreen_img"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         
+         android:src="@drawable/mine_photoview_fullscreen_navbar_btn_delete" />
+     </RelativeLayout>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/back_mine_photoview_fullscreen_rl"
+         android:text="2015-10-01"
+         android:textColor="#e6ffffff"
+         android:textSize="14dp" />
+ </RelativeLayout>
+
+     <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/top_mine_photoview_fullscreen_rl"
+        />
+	 
+  <!--   <RelativeLayout
+        android:id="@+id/bottom_mine_photoview_fullscreen_rl"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/name_mine_photoview_fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="9dp"
+            android:text="lucifer"
+            android:textColor="#33c6e5"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_mine_photoview_fullscreen"
+            android:layout_below="@+id/name_mine_photoview_fullscreen"
+            android:text="世界那么大,我想.."
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/favor_minephoto_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name_mine_photoview_fullscreen"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/textView3"
+            android:src="@drawable/mine_photoview_fullscreen_btn_like_hl" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:text="1280" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/mine_photoview_fullscreen_btn_photofullscreen2likelist" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_mine_photoview_fullscreen_rl" 
+        android:layout_below="@+id/top_mine_photoview_fullscreen_rl" >
+
+    <ImageView
+        android:id="@+id/photo_demail_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+          
+        android:src="@drawable/mine_img_loading" />
+    
+     </RelativeLayout>
+    
+    	
+        
+    
+
+    <ImageView
+        android:id="@+id/nameheader_mine_photoview_fullscreen_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="17dp"
+        android:background="@color/red"
+        android:src="@drawable/mine_photoview_fullscreen_btn_profile_stroke" />
+    
+     -->
+
+
+</RelativeLayout>

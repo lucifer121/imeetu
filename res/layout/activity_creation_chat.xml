@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_creationChat_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+        <RelativeLayout
+            android:id="@+id/back_creationChat_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back_creationChat_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_alter_btn_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_creationChat_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建主题聊天"
+            android:textColor="#a0a0a0"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/wancheng_creationChat_rl"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/kongjianruoqu_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/wancheng_creationChat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textColor="#33c6e5"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/top_creationChat_rl"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/photoUpdate_creationChat_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_creationChat_rl"
+        
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/photoUpdate_creationChat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/chat_show_btn_uploadphoto" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photoUpdate_creationChat_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="上传主题照片"
+            android:textColor="#aaaaaa"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/photo_creationChat_rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/top_creationChat_rl"
+      	android:layout_marginTop="34dp"
+      	android:layout_marginLeft="50dp"
+      	android:layout_marginRight="50dp"
+      	android:visibility="gone"
+      	
+         >
+
+        <ImageView
+            android:id="@+id/photo_creationChat_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gainsboro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/chat_show_btn_uploadphoto" />
+
+        <ImageView
+            android:id="@+id/uploadAgain_creationChat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/chat_show_photoupload_btn_reupload" />
+      
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Bottom_creationChat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mine_alter_img_point_blue"
+            android:drawablePadding="4dp"
+            android:text="创建觅聊规则"
+            android:textColor="#bfbfbf"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="你发起的觅聊都会在某个凌晨五点消失，其中："
+            android:textColor="#bfbfbf"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/mine_alter_img_point_blue"
+            android:drawablePadding="4dp"
+            android:text="每天活跃度前十的，在第二天依旧可以谈笑风生"
+            android:textColor="#bfbfbf"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:drawableLeft="@drawable/mine_alter_img_point_blue"
+            android:drawablePadding="4dp"
+            android:text="每天活跃度不及前十的，会在第二天凌晨5：00消失"
+            android:textColor="#bfbfbf"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_CreationChat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Bottom_creationChat_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="109dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/CreationChat_text_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/mine_photoview_photoupload_img_edit"
+            android:drawablePadding="6dp"
+            android:hint="来写点你想说的吧"
+            android:maxLength="14"
+            android:textColorHint="#bfbfbf"
+            android:textColorLink="#33c6e5"
+            android:textSize="12dp" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="#33c6e5" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_CreationChat_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_CreationChat_ll"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="/14"
+                android:textColor="#33c6e5"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/textsize_CreationChat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textView4"
+                android:text="0"
+                android:textColor="#33c6e5"
+                android:textSize="11dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

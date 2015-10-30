@@ -1,0 +1,32 @@
+<resources>
+    
+    <color name="read">#ff0000</color>
+    <color name="foot_txt_gray">#AEAEAE</color>
+    <drawable name="channel_edit_arrow_up_color">#FAFAFA</drawable>
+    <drawable name="channel_edit_arrow_down_color">#e5e5e5</drawable>
+    <drawable name="channel_item_bg_default">#F8F8F8</drawable>
+    <drawable name="channel_item_bg_pressed">#EB413D</drawable>
+    <drawable name="pc_bg_press">#e5e5e5</drawable>
+    <drawable name="pc_bg_press_default">#F6F6F6</drawable>
+    <drawable name="va_text_white">#fff</drawable>
+    <drawable name="Wfff">#ffffff</drawable>
+    <color name="red">#EB413D</color>
+    <color name="textclor">#B8B8B8</color>
+    <color name="redmore">#B8382D</color>
+    <color name="text_hint">#D5D5D5</color>
+    <color name="white">#FAFAFA</color>
+    <color name="pwhite">#fff</color>
+    <color name="grade">#9B9B8C</color>
+    <color name="black">#333</color>
+    <color name="channel_item_bg">#F8F8F8</color>
+    <color name="gainsboro">#DCDCDC</color><!--淡灰色 --> 
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="color_item_press">#1033c6e5</color>
+    <color name="color_item_normal">#ffffff</color>
+    <color name="tablebar_check">#33c6e5</color> 
+    <color name="buyticket_check">#1933c6e5</color>
+    <color name="text_changehui">#bfbfbf</color>
+    <color name="relativelayout_yuan">#00ffffff</color>
+    <color name="relativelayout_change">#d8ffffff</color>
+    <color name="text_title_change">#c0ffffff</color>
+</resources>

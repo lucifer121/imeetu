@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/item_memorywall_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        >
+
+        <ImageView
+            android:id="@+id/img_item_memorywall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"            
+            android:adjustViewBounds="true"
+            android:src="@drawable/acty_memorieswall_img_photocard_4" />
+
+        <ImageView
+            android:id="@+id/favor_item_memorywall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/acty_memorieswall_btn_like_nor" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/favor_item_memorywall"
+            android:layout_below="@+id/favor_item_memorywall"
+            android:textColor="#ffffff"
+            android:text="999" />
+        
+        </RelativeLayout>
+    
+
+</LinearLayout>
