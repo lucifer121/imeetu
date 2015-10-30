@@ -54,7 +54,9 @@ import android.widget.Toast;
 
 public class WelcomeActivity extends Activity {
 	
-	
+	/**
+	 * meishi
+	 */
 
 
 	@Override
