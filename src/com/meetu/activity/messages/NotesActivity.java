@@ -23,6 +23,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -50,6 +51,8 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 	//表情键盘相关
 	private LinearLayout sendLinearLayout;
 	private Boolean isShow=false;
+	
+	private int beforeID=0;
 	
 
 	@Override
@@ -116,21 +119,23 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 	public void onPageSelected(int arg0) {
 		// TODO Auto-generated method stub
 		visible();
+		log.d("lucifer", ""+arg0);
 //		NotesChannelFragment.dismissAll();
 		
 		//获取系统软件盘的状态
 				InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);  
 				boolean isOpen=imm.isActive();//isOpen若返回true，则表示输入法打开  
 				log.e("lucifer", "isOpen=="+isOpen);
-				if(imm.isActive()){
-	//				imm.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, InputMethodManager.HIDE_NOT_ALWAYS);
-
-
-					
-				
-				}
+	
+				hideKeyBoard();
 				
 				NotesChannelFragment.mEditText.clearFocus();
+				
+				//暴力 拿到 fragment
+				((NotesChannelFragment)fragmentList.get(beforeID)).isShowEditLayout();
+				
+				beforeID=arg0;
+				
 				
 		
 	}
@@ -214,6 +219,20 @@ public class NotesActivity extends FragmentActivity  implements OnPageChangeList
 	 */
 	public static void visible(){
 		bottomLayout.setVisibility(View.VISIBLE);
+	}
+
+	@Override
+	public boolean dispatchKeyEvent(KeyEvent event) {
+		// TODO Auto-generated method stub
+		return super.dispatchKeyEvent(event);
+	}
+	
+	protected void hideKeyBoard(){
+		View  curFocusView=getCurrentFocus();
+		if(curFocusView!=null){
+			((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
+			.hideSoftInputFromWindow(curFocusView.getWindowToken(), 0);
+		}
 	}
 	
 	

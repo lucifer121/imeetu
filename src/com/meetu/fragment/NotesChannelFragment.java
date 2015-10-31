@@ -585,6 +585,8 @@ public class NotesChannelFragment extends Fragment implements OnClickListener,On
 		View view = inflater.inflate(R.layout.item_note_channels_messages, null);
 		contentLayout=(RelativeLayout) view.findViewById(R.id.input_note_channels_rl);
 		content=(TextView) view.findViewById(R.id.content_note_channels_tv);
+		
+		content.setText(mEditText.getText().toString());
 		photoHead=(ImageView) view.findViewById(R.id.photoHead_notes_channel_fragment_img);
 		
 		viewX=windowFocusX-(DensityUtil.dip2px(getActivity(), 34)+1);
@@ -637,6 +639,7 @@ public class NotesChannelFragment extends Fragment implements OnClickListener,On
 				int arg3) {
 			// TODO Auto-generated method stub
 			
+			
 		}
 		
 		@Override
@@ -676,6 +679,7 @@ public class NotesChannelFragment extends Fragment implements OnClickListener,On
 			
 			
 			if(sendLayout.getVisibility()==View.VISIBLE){
+				
 				content.setText(""+arg0);
 				
 			//	getTextWH(""+arg0);
@@ -725,6 +729,23 @@ public class NotesChannelFragment extends Fragment implements OnClickListener,On
 			ViewGroup parent=(ViewGroup) hiddenView.getParent();
 			parent.removeView(hiddenView);
 		}
+	}
+	
+	/**
+	 * fragment 中 隐藏 输入框布局
+	 */
+	public void isShowEditLayout(){
+		
+		sendLinearLayout.setVisibility(View.GONE);
+		
+		removeView(100);
+		mScrollView.setY(0);
+		allLayout.setY(0);
+		 mIsKeyboardShow=false;//记录系统软键盘是否弹出
+		isShowEmoji=false;//记录表情键盘是否弹出
+		isShowBottom=true;//记录公共底部是否显示    
+		
+		 isWindow=true;//记录屏幕点击的时候的状态 true 表示会弹出键盘 false 落下键盘
 	}
 	
 	
